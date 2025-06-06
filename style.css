@@ -60,7 +60,7 @@ nav ul li a:hover {
 
 
 section {
-    padding: 40px 20px;
+    padding: 13px 20px;
     max-width: 800px;
     margin: auto;
     background-color: white;
@@ -80,6 +80,14 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
+}
+footer h6
+{
+    margin-left: 500px;
+}
+#footer div img {
+    width: 500px;
+    height: 500px;
 }
 /* Carrossel */
 .carrossel {
@@ -103,7 +111,7 @@ height: 450px;
 /* Animação do carrossel */
 @keyframes slide {
 0% { transform: translateX(0%); }
-33% { transform: translateX(-33.3%); }
+25% { transform: translateX(-33.3%); }
 66% { transform: translateX(-66.6%); }
 100% { transform: translateX(0%); }
 }
@@ -119,4 +127,24 @@ footer iframe{
     border-style: solid 10px;
     border-color: black;
     border-width: 5px;
+    margin-left: 500px;
+}
+.imagens-produtos img
+{
+width: 250px;
+height: 230px;
+}
+.imagem-manutencao img
+{
+width: 250px;
+height: 230px;
+}
+
+section h2
+{
+    text-align: center;
+    background-color: rgb(23, 126, 23);
+    color: #f2f2f2;
+    margin-bottom: 10px;
+    
 }
