@@ -1,2 +1,0 @@
-# bikegreen1
-projeto
