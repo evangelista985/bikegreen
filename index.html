@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-height, initial-scale=1.0">
     <title>Bike Green</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img_bike_green/favicon_32x32.png">
-    </head>
+    <script language="JavaScript">
+        function Mostra()
+        {
+            if (document.getElementById('bt').value=="Abrir")
+            {
+                document.getElementById("contatos").style.height="700px";
+                document.getElementById("formulario").className=document.getElementById("formulario").className.valueOf="visivel";
+                document.getElementById('bt').value="Fechar";
+                document.getElementById('bt').innerHTML ="Fechar"; /*muda a legenda do botão para Fechar*/
+            }
+            else
+            {
+                document.getElementById("contatos").style.height="170px";
+                document.getElementById("formulario").className=document.getElementById("formulario").className.valueOf="invisivel";
+                document.getElementById('bt').value="Abrir";
+                document.getElementById('bt').innerHTML ="Fale Conosco"; /*muda a legenda do botão para Abrir*/
+            }
+        }
+    </script>
+</head>
+
 <body>
+    
+    
+
     <header>
+        <div class="header-bloco">
         <div id="header-logo">
-            <img src="img_bike_green/logo_branco3.png" alt="Logo">
+            <img src="img_bike_green/logo_principal_fundo_escuro_lado.png" alt="Logo">
         </div>
         <div id="header-nomes">
-            <h1 id="header-title">Bike Green</h1>
+           <!-- <h1 id="header-title">Bike Green</h1>suspenso--> 
             <h3 id="header-tagline"><i>Sustentabilidade em Movimento</i></h3>
         </div>
         <nav>
@@ -21,114 +47,158 @@
                 <li><a href="#empresa">Sobre a Empresa</a></li>
                 <li><a href="#produtos">Nossos Produtos</a></li>
                 <li><a href="#manutencao">Manutenção e Revisão</a></li>
+                <li><a href="#eventos">Eventos</a></li>
                 <li><a href="#contatos">Contato</a></li>
+                
             </ul>
         </nav>
+        </div>
     </header>
+    <br><br><br>
+
     <div class="carrossel">
         <div class="slides">
             <img src="img_bike_green/carrossel1.jpg" alt="carrossel1">
             <img src="img_bike_green/carrossel2.jpg" alt="carrossel2">
-            <img src="img_bike_green/carrossel3 (2).jpg" alt="carrossel3">            
+            <img src="img_bike_green/carrossel3 (2).jpg" alt="carrossel3">
         </div>
     </div>
-
     <section id="empresa">
         <h2>Sobre a Empresa</h2>
-         <p>
-          A Bike Green é uma empresa referência na venda e manutenção de bicicletas tradicionais e elétricas, com forte compromisso com a mobilidade sustentável. Atuando no mercado com responsabilidade ambiental, a empresa busca incentivar o uso da bike como meio de transporte eficiente, econômico e ecológico.
+        <p>
+            A Bike Green é uma empresa referência na venda e manutenção de bicicletas tradicionais e elétricas, com
+            forte compromisso com a mobilidade sustentável. Atuando no mercado com responsabilidade ambiental, a empresa
+            busca incentivar o uso da bike como meio de transporte eficiente, econômico e ecológico.
         </p>
         <br>
-        <p><strong>Missão:</strong> "Oferecer soluções em mobilidade sustentável, promovendo o bem-estar, a saúde e o respeito ao meio ambiente através de bicicletas tradicionais e elétricas de qualidade."</p>
+        <p><strong>Missão:</strong> "Oferecer soluções em mobilidade sustentável, promovendo o bem-estar, a saúde e o
+            respeito ao meio ambiente através de bicicletas tradicionais e elétricas de qualidade."</p>
         <br>
-        <p><strong>Visão:</strong> "Ser referência nacional em inovação e sustentabilidade no mercado de bicicletas, inspirando a transformação para um estilo de vida mais ecológico e saudável."</p>
+        <p><strong>Visão:</strong> "Ser referência nacional em inovação e sustentabilidade no mercado de bicicletas,
+            inspirando a transformação para um estilo de vida mais ecológico e saudável."</p>
         <br>
-        <p><strong>Valores:</strong> "Sustentabilidade, qualidade, inovação, respeito ao cliente e compromisso com a preservação ambiental."</p>
+        <p><strong>Valores:</strong> "Sustentabilidade, qualidade, inovação, respeito ao cliente e compromisso com a
+            preservação ambiental."</p>
     </section>
-    <section id ="produtos">
+    <section id="produtos">
         <h2>Nossos Produtos</h2>
-        <h3>Bikes Elétricas</h3>
-        <div class="imagens-produtos">
-        <img src="img_bike_green/produtos1.jpg" alt="nossos produtos1">
-        <img src="img_bike_green/produtos2.jpg" alt="nossos produtos2">        
-        <img src="img_bike_green/produtos3.jpg" alt="nossos produtos3">
         <br>
-        <h3>Bikes Tradicionais</h3>
-        <img src="img_bike_green/produtos4.jpg" alt="nossos produtos4">
-        <img src="img_bike_green/carrossel3 (2).jpg" alt="nossos produtos5">
-        <img src="img_bike_green/carrossel3.jpg" alt="nossos produtos6">
-
-        
-        
+        <h3>Bikes Elétricas</h3>
+        <p>Na Bike Green, você encontra bicicletas elétricas modernas, econômicas e sustentáveis. Ideais para o dia a dia ou passeios, nossos modelos oferecem conforto, autonomia e praticidade para quem busca mobilidade inteligente.</p>
+        <div class="imagens-produtos">
+            <img src="img_bike_green/produtos1.jpg" alt="nossos produtos1">
+            <img src="img_bike_green/produtos_elet5.jpg" alt="nossos produtos2">
+            <img src="img_bike_green/produtos2.jpg" alt="nossos produtos3">
+            <br><br>
+            <h3>Bikes Tradicionais</h3>
+            <p>Na Bike Green, oferecemos uma variedade de bicicletas tradicionais para todos os estilos e idades. Com modelos confortáveis, duráveis e de alto desempenho, elas são ideais para quem valoriza a simplicidade do pedal, seja para lazer, esporte ou deslocamentos diários.</p>
+            <img src="img_bike_green/produtos_trad3.jpg" alt="nossos produtos4">
+            <img src="img_bike_green/produtos_trad4.jpg" alt="nossos produtos5">
+            <img src="img_bike_green/carrossel3.jpg" alt="nossos produtos6">
     </section>
     <section id="manutencao">
-            <h2>Manutenção e Revisão</h2>
-            <p>
-          A manutenção de bicicletas tradicionais e elétricas (e-bikes) é fundamental para garantir segurança e bom desempenho. Nas bikes convencionais, os cuidados envolvem limpeza, lubrificação da corrente, regulagem dos freios e câmbios, além da calibragem e inspeção dos pneus.
-            </p>
-            <br>
-            <div class="imagem-manutencao">
+        <h2>Manutenção e Revisão</h2>
+        <br>
+        <p>
+            A manutenção de bicicletas tradicionais e elétricas (e-bikes) é fundamental para garantir segurança e bom
+            desempenho. Nas bikes convencionais, os cuidados envolvem limpeza, lubrificação da corrente, regulagem dos
+            freios e câmbios, além da calibragem e inspeção dos pneus.
+        </p>
+        <br>
+        <div class="imagem-manutencao">
             <img src="img_bike_green/manutencao1.jpg" alt="manutencao1">
             <img src="img_bike_green/manutencao2.jpg" alt="manutencao2">
             <img src="img_bike_green/manutencao3.jpg" alt="manutencao3">
-            </div>
-           
+        </div>
     </section>
+    <section id="eventos">
+        <h2>Eventos Ciclísticos</h2>
+        <p>Fique por dentro dos passeios ciclísticos em nossa região.
+        <br>
+        <div class="event1">
+        <div class="event2">
+        <iframe src="https://www.youtube.com/embed/YcsI1gGaLoo?si=bL2UwnsgNmQK5rO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="event3-tex">
+        <p>Evento ciclístico Parque Estadual Do Jaraguá em São Paulo.
+        Fique atento em nossas redes sociais aos próximos acontecimentos. Tenha em nosso site informações e videos da participação deles.</p>
+
+    </div>
+    </div>
     </section>
-    <section id ="contatos">
-        <h2>Contato</h2>
-        <p>Email: contato@bikegreen.com.br</p>
-        <p>Telefone: (11) 11111-1111</p>
-        <div><h1>Formulário Opinião Cliente</h1></div>
-    
-    <form method="post"action="mail to :evangelistafabio985@gmail.com"enc type="txt/plain">
-    <fieldset>
-            <legend><strong>Dados Pessoais</strong></legend>
-            <label for="txtnome">Nome</label>
-            <input type ="text" name="txtnome" id= "txtnome" required max="40"/>            
-            <label for="txtemail">Email:</label>
-            <input type="txtemail" id="txtnome" required>
-            <br><br>
-        <label for="txtaniv">Data Aniversário :</label>
+    <section id="contatos">
+                <h2>Contato</h2>
+                <p>Email: bikegreen2025@outlook.com</p>
+                <p>Telefone: (11) 96773-7646</p>
             
-        <label for="txtmens"><strong>Mensagem</strong></label>
-            
-        <label for="txtmens">Escolha o tipo de Mensagem : </label>
-            <imput type="date"name="txtaniv" id="txtaniv">
-            <select name="txttipo" id="txttipo">
-        <option checked>...</option>
-        <option>Elogio</option>
-        <option>Reclamação</option>
-        <option>Sugestão</option>
-    </select>
-    <br>
-    <textarea type="textmens" name="mensagem" id="cxmensagem"></textarea>
-    <br>
-    <button><strong>Enviar</strong></button>
-    </fieldset>
-    </section>    
+        <button value="Abrir" onClick="Mostra()" id="bt"><strong>Fale Conosco</strong></button>
+        <form method="post" action="mailto:bikegreen2025@outlook.com" enctype="text/plain" class="invisivel" id="formulario">
+            <fieldset>
+                <legend><strong>Dados Pessoais</strong></legend>
+                <label for="txtnome">Nome:</label>
+                <input type="text" name="txtnome" id="txtnome" required max="40" />
+                <label for="txtemail">Email:</label>
+                <input type="email" id="txtnome" required>
+                <br>
+                <label for="txtaniv">Data/Mês Aniversário :</label>
+                <input type="date" id="txtaniv" required max="5"/>
+
+                <label for="txtmens"><strong>Mensagem:</strong></label>
+
+                <label for="txtmens">Escolha o tipo de Mensagem : </label>
+                
+                    <select name="txttipo" id="txttipo">
+                        <option checked>...</option>
+                        <option>Elogio</option>
+                        <option>Reclamação</option>
+                        <option>Sugestão</option>
+                    </select>
+                    <br>
+                    <textarea name="mensagem" id="cxmensagem" rows="5" cols="40" required></textarea>
+                    <br>
+                    <button><strong>Enviar</strong></button>
+            </fieldset>
+        </form>
+    </section>
     <footer>
-        <div class="paragrafo-redes">                    
-            <p>Seja Bem Vindo à Nossas Redes</p>
+        <!-- Coluna da Esquerda: Redes Sociais -->
+        <div class="bloco">
+            <div class="footer-esquerda">
+                <div class="paragrafo-redes">
+                    <p><strong>Seja Bem-Vindo às Nossas Redes Sociais</strong></p>
+                </div>
+
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/bike_green.official?igsh=cHNjejJtamx1NnM4" target="_blank">
+                        <img src="img_bike_green/icone_Instagram_removebg.png" alt="Instagram">
+                    </a>
+                    <a href="https://x.com/Bikegreen222#:~:text=Editar%20perfil-,Bike_green%40oficial,-%40Bikegreen222" target="_blank">
+                        <img src="img_bike_green/icone_X_removebg.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100092841157612" target="_blank">
+                        <img src="img_bike_green/icone_facebook_removebg.png" alt="Facebook">
+                    </a>
+                    <a href="https://wa.me/+5511967737646" target="_blank">
+                        <img src="img_bike_green/icone_whatsapp__1_-removebg.png" alt="Whatsapp">
+                    </a>
+                    <a href="mail to :bikegreen2025@outlook.com" target="_blank">
+                        <img src="img_bike_green/icone_mensagem_texto_removebg.png" alt="Mensagem">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna da Direita: Mapa e Endereço -->
+            <div class="footer-direita">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2370841091983!2d-46.713275025423464!3d-23.523973760218325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef889b0d25609%3A0x9383a511502bf8ef!2sR.%20Albion%2C%20627%20-%20Lapa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005077-130!5e0!3m2!1spt-BR!2sbr!4v1748825286150!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <h6>Rua Albion, 627 - Lapa</h6>
+                <h6>CEP 05077-130 - São Paulo - SP</h6>
+            </div>
         </div>
-        <div class="redes-sociais">
-            <a href="https://www.instagram.com" target="_blank"> 
-                <img src="img_bike_green/icone_Instagram_removebg.png" alt="Instagram"></a>
-            <a href="https://www.twitter.com" target="_blank">
-                    <img src="img_bike_green/icone_X_removebg.png" alt="Twitter"></a>
-            <a href="https://www.facebook.com"target="_blank">
-                <img src="img_bike_green/icone_facebook_removebg.png" alt="Facebook"></a>
-            <a href="https:/wa.me/seu numero" alt="Whatsapp">
-                <img src="img_bike_green/icone_whatsapp__1_-removebg.png" alt="Whatsapp"></a>
-            <a href="mensagem"     alt="mensagem">
-                <img src="img_bike_green/icone_mensagem_texto_removebg.png" alt="Mensagem"></a>              
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2370841091983!2d-46.713275025423464!3d-23.523973760218325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef889b0d25609%3A0x9383a511502bf8ef!2sR.%20Albion%2C%20627%20-%20Lapa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005077-130!5e0!3m2!1spt-BR!2sbr!4v1748825286150!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br>
-        <h6>Rua Albion, 627 Lapa</h6>
-        <h6>Cep.05077-130 São Paulo - SP</h6>
-        <br>
-        <p>&copy; 2025 Bike Green . Todos os direitos reservados.</p>        
-    </footer>    
+    </footer>
+    
 </body>
+
 </html>
