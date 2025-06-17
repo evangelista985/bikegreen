@@ -604,11 +604,12 @@ width: 40px; /* ajuste conforme necessário */
 height: auto;
 
 }
+/*
 .footer-embaixo{
     display: inline;
     width: 100%;
 }
-
+*/
 .footer-direita h6{
     text-align: center;
 }
