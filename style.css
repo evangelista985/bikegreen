@@ -156,7 +156,7 @@ section .contatos{
     max-width: 800px;
     margin: auto;
     overflow: hidden;
-    margin-top: 90px;
+    margin-top: 20px;
 
 }
 
@@ -185,7 +185,6 @@ section .contatos{
 @media (max-width: 1024px) {
     .carrossel {
         max-width: 95%;
-        margin-top:110px;
     }
 
     .carrossel img {
