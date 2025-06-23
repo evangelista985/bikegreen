@@ -427,14 +427,16 @@ height: auto;
         overflow: hidden;
         margin-bottom: -40px;
         width: 100vw;
-        padding: 0 ;                
+        padding: 0 ;
+        height: auto;                
     }
 
     .carrossel .slides {    /*controla os trilhos do carrossel*/
         width: 306vw; /* 3 slides de 100% */
         display: flex;
         flex-wrap: nowrap;     
-        animation: slideMobile 25s infinite ease-in-out;        
+        animation: slideMobile 25s infinite ease-in-out;  
+        height: auto;      
     }
 
     .carrossel img {     /*configuração caixa da imagem*/
