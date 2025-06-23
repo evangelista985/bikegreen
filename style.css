@@ -1,4 +1,4 @@
-* {
+* {                             
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,7 +27,6 @@ header {
     padding: 10px 20px;
     position: fixed;
     width: 100%;
-    /*height: 90px;*/
     z-index: 1000;
     top:0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -39,7 +38,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
     height: 100%;
     margin:0 auto;
     flex-wrap: wrap;
@@ -58,7 +56,6 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
-    gap:12px;
 }
 
 nav ul li {
@@ -80,39 +77,6 @@ nav ul li a:hover {
     background-color:rgb(23, 126, 23);
 }
 
-/* Carrossel */
-.carrossel {
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    margin-top: 20px;
-
-}
-
-.carrossel .slides {
-    display: flex;
-    width: 300%;
-    animation: slide 25s infinite;
-}
-
-.carrossel img {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    display:block;
-}
-
-/* Animação do carrossel */
-@keyframes slide {
-0% { transform: translateX(0%); }
-25% { transform: translateX(-33.3%); }
-66% { transform: translateX(-66.6%); }
-100% { transform: translateX(0%); }
-}
-
-/* Responsivo: Tablets até 1024px */
-
-
 
 
 @keyframes slideMobile {
@@ -122,9 +86,34 @@ nav ul li a:hover {
     100% { transform: translateX(0%); }
         
     }
+/* Carrossel */
+.carrossel {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;  
 
+}
 
+.carrossel .slides {
+    display: flex;
+    width: 300%;
+    animation: slide 25s infinite ease-in-out;
+}
 
+.carrossel img {
+    width: 33.333%;
+    height: auto;
+    display:block;
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+0% { transform: translateX(0%); }
+25% { transform: translateX(-33.3%); }
+66% { transform: translateX(-66.6%); }
+100% { transform: translateX(0%);}
+}
 
 
 section {
@@ -186,8 +175,7 @@ section produtos{
     box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-#eventos { 
-   
+#eventos {    
     padding: 20px;
 }
 
@@ -201,12 +189,12 @@ section produtos{
 
 .event2{
     width: 48%;
-    height: 300px;   /*xxx2*/
+    height: 300px;    
 }
 
 .event2 iframe{
     width: 100%;
-    min-height: 300px;   /*xxx3*/
+    min-height: 300px;   
     border-radius: 10px;    
     padding: 10px;
     box-shadow: 1px 1px 0px 0px rgb(40, 40, 40);
@@ -271,7 +259,6 @@ legend {
 }
 .contat button{
     background-color: rgb(93, 92, 92);
-
 }
 
 label {
@@ -328,7 +315,7 @@ footer {
     background-color: #2c3e50;
     color: white;
     margin-top: 20px;
-    padding: 13px 20px;
+    padding: 13px 20px;     
 }
 
 .footer-container {
@@ -345,19 +332,17 @@ footer {
    display:flex;
    justify-content: space-around;
    flex-wrap: wrap;
-   gap: 10px;
+   gap: 10px;     
    align-items:flex-start;
 }
       
 .footer-esquerda {
-    text-align: center;
+    text-align: center;   
 }
 
-.footer-direita {
+.footer-direita {        
     text-align: center;
 }
-
-
 
 .footer-direita iframe{
     width:100%;
@@ -372,76 +357,95 @@ footer {
 }
 
 .footer-embaixo {
-    text-align: center;
+    text-align: center;   
 }
 .redes-sociais {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding-top: 10px;
+    padding-top: 10px;      
     justify-content: center;
 }
 
 .redes-sociais img {
-width: 40px; /* ajuste conforme necessário */
+width: 40px; 
 height: auto;
-
 }
-
-
-
 
 
 /* Responsividade para celulares */
 /* Responsivo: CELULAR até 640px */
 @media screen and (max-width: 640px) {
+
+    body{
+        font-size:16px;
+    }
+
+
   header {
-    height: auto;
     padding: 10px;
     }
-/*xxx1*/
+
   html{
-    scroll-padding-top: 70px;/*ajuste fino do menu nav para aparecer section correta no celular*/
+    scroll-padding-top: 320px;/*ajuste fino do menu nav para aparecer section correta no celular*/
     }
 
   .header-bloco {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    text-align: center;
     }
 
   nav ul {
     flex-direction: column;
-    gap: 8px;
+    align-items: center;  
+    justify-content: center;  
+    width: 100px;
+    }
+ 
+    nav ul li{
+    display:block  
+    }
+
+    nav ul li a {
+    display:block;
+    font-size: 15px;
+    padding: 6 10px;
+    white-space: nowrap;
+    }
+    h1,h2,h3{
+        font-size:2.0em;
     }
 
   #header-logo img {
-    width: 140px;
+    width: 150px;
+    }
+    
+    .carrossel {
+        margin-top: 283px;
+        overflow: hidden;
+        margin-bottom: -40px;
+        width: 100vw;
+        padding: 0 ;                
     }
 
-  nav ul li a {
-    font-size: 0.95rem;
-    padding: 8px 12px;
-    }
-    .carrossel {
-        max-width: 100%;
-        margin-top: 258px;
-        padding: 0 10px;
-        
-    }
-    .carrossel .slides {
+    .carrossel .slides {    /*controla os trilhos do carrossel*/
+        width: 306vw; /* 3 slides de 100% */
         display: flex;
-        width: 310%; /* 3 slides de 100% */
-        animation: slideMobile 25s infinite ease-in-out;
-        
+        flex-wrap: nowrap;     
+        animation: slideMobile 25s infinite ease-in-out;        
     }
-    .carrossel img {
-        width: 100%;
+
+    .carrossel img {     /*configuração caixa da imagem*/
+        width: 102vw;    /*controla a largura da imagem dentro do carrossel*/
         height: auto;
-        max-height: 355px; /* evita imagem grande demais */
+        object-fit: contain;
+        flex-shrink: 0;
         display: block;
-        object-fit: cover;
+        margin:0 auto;                
     }
+
     .imagens-produtos {
         flex-direction: column;
         align-items: center;
@@ -457,9 +461,9 @@ height: auto;
     }
     .imagens-manutencao img{
         width: 100%;
-        margin-bottom: 10px;
-        
+        margin-bottom: 10px;        
     }
+
    /*ver pq não tem1024*/
     .event1{ 
         flex-direction: column;
@@ -474,13 +478,11 @@ height: auto;
     }
         .event2 iframe{
         width: 100%;
-        height: auto;
-             
+        height: auto;             
     }   
     .event3-tex p{
         width: 90%;
-        margin-bottom: 10px;
-        
+        margin-bottom: 10px;        
     }
      .event3-tex p{
         width:100%;
@@ -518,8 +520,6 @@ height: auto;
         font-size: 16px;
         padding: 12px;
     }
-
-
 
     .footer-esquerda,
     .footer-direita {
@@ -576,8 +576,7 @@ height: auto;
     }
     .imagens-manutencao img{
         width: 100%;
-        margin-bottom: 10px;
-        
+        margin-bottom: 10px;        
     }
     .event2{
         width: 100%;
@@ -585,8 +584,7 @@ height: auto;
     }
        .event2 iframe{
         width:100%;
-        height: auto;
-               
+        height: auto;               
     }
         .event3-tex{
         width:100%;
