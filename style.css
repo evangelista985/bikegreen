@@ -442,7 +442,7 @@ height: auto;
     .carrossel img {     /*configuração caixa da imagem*/
         width: 102vw;    /*controla a largura da imagem dentro do carrossel*/
         height: auto;
-        max-height:fit-content;
+        max-height:auto;
         object-fit: contain;
         flex-shrink: 0;
         display: block;
