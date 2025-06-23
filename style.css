@@ -425,7 +425,7 @@ height: auto;
     .carrossel {
         margin-top: 283px;
         overflow: hidden;
-        margin-bottom: -40px;
+        margin-bottom: -10px;
         width: 100vw;
         padding: 0 ;
         height: auto;                
@@ -442,6 +442,7 @@ height: auto;
     .carrossel img {     /*configuração caixa da imagem*/
         width: 102vw;    /*controla a largura da imagem dentro do carrossel*/
         height: auto;
+        max-height:fit-content;
         object-fit: contain;
         flex-shrink: 0;
         display: block;
