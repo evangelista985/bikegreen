@@ -590,7 +590,7 @@ ok
         cursor: pointer;
         position: absolute;
         top: 15px;
-        left: 420px; /* Fica à direita */
+        left: 320px; /* Fica à direita */
         z-index: 1100;
     }
 
