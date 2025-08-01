@@ -33,6 +33,8 @@ body {
     color: #333;
     z-index: 0;
     overflow-x: hidden;
+    
+    
 }
 
 /* Imagem de fundo com opacidade foi criado e configurado pseudo elemento(::before), tornei imagem independente do body*/
@@ -50,6 +52,7 @@ body::before {
     opacity: 0.2; /* Altere este valor conforme desejar */
     z-index: -1;
     pointer-events: none; /* Garante que não bloqueie cliques no conteúdo */
+    
 }
 
 header {
@@ -90,11 +93,9 @@ header {
     display: none; /* escondido no computador */
     position: absolute;
     top: 15px;
-    right: 20px;  /* <--  ícone fique à direita */
+    right: 20px;  /* <-- Isso garante que o ícone fique à direita */
     z-index: 1100;
 }
-
-
 
 nav ul {
     list-style: none;
@@ -132,7 +133,7 @@ nav ul li a:hover {
     100% { transform: translateX(0%); }
         
     }
-
+/* Carrossel */
 .carrossel {
     max-width: 800px;
     margin: auto;
@@ -418,6 +419,8 @@ width: 40px;
 height: auto;
 }
 
+
+
 /* Responsivo: CELULAR até 640px */
 @media screen and (max-width: 640px) {
 
@@ -425,14 +428,16 @@ height: auto;
         font-size:16px;
     }
 
+
   header {
     padding: 10px;
     }
 
+
   html{
     scroll-padding-top: 280px;/*ajuste fino do menu nav para aparecer section correta no celular*/
     }
-
+ok
   .header-bloco {
     display: flex;
     flex-direction:row;
@@ -469,7 +474,7 @@ height: auto;
     }
     
     .carrossel {
-        margin-top: 283px;
+        margin-top: 83px;
         overflow: hidden;
         margin-bottom: -10px;
         width: 100vw;
@@ -628,6 +633,7 @@ height: auto;
     
 }
 
+    
     .header-bloco {
         position: relative;
         flex-direction: row;
@@ -647,6 +653,7 @@ height: auto;
         display: block;
 }
     /* Evita que o header empurre o carrossel */
+    
     
 }
 
